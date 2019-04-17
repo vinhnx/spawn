@@ -9,9 +9,9 @@
 before:
 
 ```bash
-$ swift package update
+$ swift package update 
 $ swift package generate-xcodeproj
-$ xed .
+$ xed . # this will open the newly generated Xcode project
 ```
 
 after:
@@ -19,6 +19,8 @@ after:
 ```bash
 $ spawn
 ```
+
+NOTE: you might want to close Xcode to have the `xed .` taking into effect, or chose `Revert` option from Xcode alert.
 
 ## Goals
 
