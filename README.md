@@ -74,43 +74,8 @@ If you encounter a permissions failure while installing, you may need to prepend
 
 ## Usage
 
-Without any specifications (have to be executed in the directory where [Swift Package Manager manifest file (Package.swift)](https://github.com/apple/swift-package-manager/blob/master/Documentation/Usage.md) is located):
-
 ```bash
-$ spawn run
-```
-
-Specifies path of Swift Package Manager directory to update:
-
-```bash
-$ spawn run -p Dependencies
-```
-
-Help page:
-
-```bash
-$ spawn --help
-
-Usage:
-
-    $ spawn
-
-Commands:
-
-    + run - Check project's Package dependencies' local version with remote latest version.
-```
-
-Run with option:
-
-```bash
-$ spawn run --help
-
-Usage:
-
-    $ spawn run
-
-Options:
-    --path [default: .] - Path to the folder contains Swift Package manifest file (Package.swift).
+$ spawn
 ```
 
 ## Help, feedback or suggestions?
