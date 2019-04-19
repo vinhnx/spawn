@@ -74,6 +74,15 @@ If you encounter a permissions failure while installing, you may need to prepend
 
 ## Usage
 
+On any Swift package directory, after `git clone`, usually the process involves:
+
+1. `git clone https://github.com/vinhnx/spawn`
+2. `swift package update`
+3. `swift package generate-xcodeproj`
+4. `xed .` # or `open .proj#tab`
+
+With `spawn`:
+
 ```bash
 $ spawn
 ```
