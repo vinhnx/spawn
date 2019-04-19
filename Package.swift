@@ -8,13 +8,10 @@ let package = Package(
     products: [
         .executable(name: "spawn", targets: ["spawn"])
     ],
-    dependencies: [
-        .package(url: "https://github.com/JohnSundell/ShellOut.git", from: "2.0.0")
-    ],
     targets: [
         .target(
             name: "spawn",
-            dependencies: ["ShellOut"]),
+            dependencies: []),
         .testTarget(
             name: "spawnTests",
             dependencies: ["spawn"]),
