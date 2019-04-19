@@ -7,15 +7,14 @@
 **spawn** is a small command-line utility wrapper for Swift Package Manager update commands:
 
 before:
-
 ```bash
-$ swift package update 
-$ swift package generate-xcodeproj
-$ xed . # this will open the newly generated Xcode project
+$ git clone https://github.com/vinhnx/spawn # clone any Swift Package Manager project
+$ swift package update # update or resolve package dependencies
+$ swift package generate-xcodeproj # generate a .xcodeproj to edit on Xcode
+$ xed . # open generated .xcodeproj automatically
 ```
 
 after:
-
 ```bash
 $ spawn
 ```
@@ -26,7 +25,9 @@ NOTE: you might want to close Xcode to have the `xed .` taking into effect, or c
 
 After adding any new `.package` under SPM's package manifest file, in order to use the new package, we need to either run `swift package update` or `swift package generate-xcodeproj` and reload Xcode again.
 
-This small wrapper aims to automate that process.
+This small wrapper aims to automate that process. 
+
+Check Usage section below for more details.
 
 ## Installation
 
@@ -74,14 +75,7 @@ If you encounter a permissions failure while installing, you may need to prepend
 
 ## Usage
 
-On any Swift package directory, after `git clone`, usually the process involves:
-
-1. `git clone https://github.com/vinhnx/spawn`
-2. `swift package update`
-3. `swift package generate-xcodeproj`
-4. `xed .` # or `open .proj#tab`
-
-With `spawn`:
+On any Swift package directory, after `git clone`:
 
 ```bash
 $ spawn
