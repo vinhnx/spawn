@@ -6,8 +6,8 @@ install: build
 	install ".build/release/$(bin_name)" "$(bindir)"
 
 build:
-	swift package update
-	swift build -c release
+	swift package --disable-sandbox update
+	swift build -c release --disable-sandbox
 
 uninstall:
 	rm -f $(prefix)/bin/$(bin_name)
