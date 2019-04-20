@@ -1,6 +1,5 @@
-prefix?=/usr/local
-binary_dir = $(prefix)/bin
-binary_name = spawn
+PREFIX?=/usr/local
+INSTALL_NAME = spawn
 
 install: build install_bin
 
@@ -9,8 +8,8 @@ build:
 	swift build -c release
 
 install_bin:
-	mkdir -p $(binary_dir)
-	install .build/Release/$(binary_name) $(binary_dir)
+	mkdir -p $(PREFIX)/bin
+	install .build/Release/$(INSTALL_NAME) $(PREFIX)/bin
 
 uninstall:
-	rm -f $(binary_dir)/$(binary_name)
+	rm -f $(PREFIX)/bin/$(INSTALL_NAME)
