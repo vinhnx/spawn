@@ -1,17 +1,16 @@
-prefix ?= /usr/local
-bindir = $(prefix)/bin
-bin_name = spawn
+PREFIX?=/usr/local
+BINARY_NAME = spawn
+
+install: build install_bin
 
 build:
-	swift build -c release --disable-sandbox
+	swift package update
+	swift build -c release
 
-install: build
-	install ".build/release/$(bin_name)" "$(bindir)"
+install_bin:
+	mkdir -p $(PREFIX)/bin
+	mv .build/Release/$(BINARY_NAME) .build/Release/$(BINARY_NAME)
+	install .build/Release/$(BINARY_NAME) $(PREFIX)/bin
 
 uninstall:
-	rm -rf "$(bindir)/swift-syntax-highlight"
-
-clean:
-	rm -rf .build
-
-.PHONY: build install uninstall clean
+	rm -f $(PREFIX)/bin/$(BINARY_NAME)
