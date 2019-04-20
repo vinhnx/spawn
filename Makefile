@@ -6,7 +6,7 @@ build:
 	swift build -c release --disable-sandbox
 
 install: build
-	install ".build/release/$(spawn)" "$(bindir)"
+	install ".build/release/$(bin_name)" "$(bindir)"
 
 uninstall:
 	rm -rf "$(bindir)/swift-syntax-highlight"
