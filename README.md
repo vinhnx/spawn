@@ -31,9 +31,31 @@ Check Usage section below for more details.
 
 ## Installation
 
-#### On Mac
+**homebrew**
 
-Using **Make** (recommended):
+```bash
+$ brew tap vinhnx/homebrew-formulae
+$ brew install spawn
+```
+
+or
+```bash
+$ brew install vinhnx/homebrew-formulae/spawn
+```
+
+**[Mint](https://github.com/yonaskolb/mint)**
+
+```bash
+$ mint install vinhnx/spawn
+```
+
+**[Marathon](https://github.com/JohnSundell/Marathon)**
+
+```bash
+$ marathon install vinhnx/spawn
+```
+
+**Make**
 
 ```bash
 $ git clone https://github.com/vinhnx/spawn.git
@@ -41,37 +63,14 @@ $ cd spawn
 $ make
 ```
 
-Using the **Swift Package Manager**:
-
-```bash
-$ git clone https://github.com/vinhnx/spawn.git
-$ cd spawn
-$ swift build -c release -Xswiftc -static-stdlib
-$ cp -f .build/release/spawn /usr/local/bin/spawn
- ```
- 
-Using **[Mint](https://github.com/yonaskolb/mint)**:
-
-```bash
-$ mint install vinhnx/spawn
-```
-
-Using **[Marathon](https://github.com/JohnSundell/Marathon)**:
-
-```bash
-$ marathon install vinhnx/spawn
-```
-
-#### On Linux
+**Swift Package Manager**
 
 ```bash
 $ git clone https://github.com/vinhnx/spawn.git
 $ cd spawn
 $ swift build -c release
 $ cp -f .build/release/spawn /usr/local/bin/spawn
-```
-
-If you encounter a permissions failure while installing, you may need to prepend sudo to the commands. To update `spawn`, simply repeat any of the above two series of commands, except cloning the repo.
+ ```
 
 ## Usage
 
