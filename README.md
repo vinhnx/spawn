@@ -31,7 +31,7 @@ Check Usage section below for more details.
 
 ## Installation
 
-**homebrew**
+**[homebrew](https://brew.sh)**
 
 ```bash
 $ brew tap vinhnx/homebrew-formulae
