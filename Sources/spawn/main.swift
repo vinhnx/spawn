@@ -32,6 +32,8 @@ private extension Pipe {
 }
 
 do {
+    #warning("TODO: check existing Package.swift manifest before executing, otherwise throws error")
+
     print("📦 ... updating packages")
     print(try Process().launchBash("swift package update"))
 
