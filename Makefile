@@ -1,16 +1,20 @@
 PREFIX?=/usr/local
+BINARY_DIRECTORY = $(PREFIX)/bin
 BINARY_NAME = spawn
 
 install: build install_bin
 
 build:
 	swift package update
-	swift build -c release
+	swift build -c release --disable-sandbox
 
 install_bin:
-	mkdir -p $(PREFIX)/bin
-	mv .build/Release/$(BINARY_NAME) .build/Release/$(BINARY_NAME)
-	install .build/Release/$(BINARY_NAME) $(PREFIX)/bin
+	install ".build/release/$(BINARY_NAME)" "$(BINARY_DIRECTORY)"
 
 uninstall:
 	rm -f $(PREFIX)/bin/$(BINARY_NAME)
+
+clean:
+	rm -rf .build
+
+.PHONY: build install uninstall clean
