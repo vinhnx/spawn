@@ -23,7 +23,7 @@ NOTE: you might want to close Xcode to have the `xed .` taking into effect, or c
 
 ## Goals
 
-After adding any new `.package` under SPM's package manifest file, in order to use the new package, we need to either run `swift package update` or `swift package generate-xcodeproj` and reload Xcode again.
+When you want to try out or to edit a SPM package in Xcode, or after adding any new `.package` under SPM's package manifest file; you need to either run `swift package update` or `swift package generate-xcodeproj` and reload Xcode again.
 
 This small wrapper aims to automate that process. 
 
