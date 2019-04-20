@@ -7,7 +7,7 @@ install: build
 
 build:
 	swift package update
-	swift build -c release --disable-sandbox
+	swift build -c release
 
 uninstall:
 	rm -f $(prefix)/bin/$(bin_name)
