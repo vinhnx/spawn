@@ -4,7 +4,7 @@
 [![Swift Package Manager](https://img.shields.io/badge/spm-compatible-brightgreen.svg?style=flat)](https://swift.org/package-manager)
 [![@vinhnx](https://img.shields.io/badge/contact-%40vinhnx-blue.svg)](https://twitter.com/vinhnx)
 
-**spawn** is a small command-line utility wrapper for Swift Package Manager update commands:
+**spawn** A small command-line tool to quickly tryout a Swift Package Manager package locally.
 
 before:
 ```bash
