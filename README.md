@@ -6,6 +6,15 @@
 
 **spawn** A small command-line tool to quickly tryout a Swift Package Manager package locally.
 
+```bash
+❯ spawn
+Completed resolution in 0.22s
+📦 ... Everything is already up-to-date
+🛠 ... generated: ./spawn.xcodeproj
+📂 ... opening updated Xcode project
+✅ all done!
+```
+
 before:
 ```bash
 $ git clone https://github.com/vinhnx/spawn # clone any Swift Package Manager project
