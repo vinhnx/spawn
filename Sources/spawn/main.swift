@@ -31,15 +31,44 @@ private extension Pipe {
     }
 }
 
+enum SpawnError: Error, CustomStringConvertible {
+    case directoryNotFound(String)
+    case failedToQueryDirectory
+    case swiftPackageManifestNotFound
+
+    var message: String {
+        switch self {
+        case .directoryNotFound(let directory):
+            return "Directory \(directory) not found"
+        case .failedToQueryDirectory:
+            return "Failed to query directory"
+        case .swiftPackageManifestNotFound:
+            return "Swift Package manifest file (Package.swift) not found"
+        }
+    }
+
+    var description: String {
+        return "[ERROR] \(self.message)"
+    }
+}
+
 do {
-    #warning("TODO: check existing Package.swift manifest before executing, otherwise throws error")
+    let currentDir = URL(string: ".")!
+    guard let filesEnumerator = FileManager.default.enumerator(at: currentDir, includingPropertiesForKeys: nil, options: [.skipsHiddenFiles], errorHandler: nil) else {
+        throw SpawnError.directoryNotFound(".")
+    }
 
-    print("📦 ... updating packages")
-    print(try Process().launchBash("swift package update"))
+    guard let files = filesEnumerator.allObjects as? [URL] else {
+        throw SpawnError.failedToQueryDirectory
+    }
 
-    print("🛠 ... generate Xcode project")
-    print(try Process().launchBash("swift package generate-xcodeproj"))
+    let isPackageManifestFileExists = files.first { $0.lastPathComponent == "Package.swift" } != nil
+    guard isPackageManifestFileExists else {
+        throw SpawnError.swiftPackageManifestNotFound
+    }
 
+    print("📦 ... \(try Process().launchBash("swift package update"))")
+    print("🛠 ... \(try Process().launchBash("swift package generate-xcodeproj"))")
     print("📂 ... opening updated Xcode project")
     try Process().launchBash("xed .")
     print("✅ all done!")
