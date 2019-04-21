@@ -15,7 +15,15 @@ Completed resolution in 0.22s
 ✅ all done!
 ```
 
-before:
+NOTE: you might want to close Xcode to have the `xed .` taking into effect, or chose `Revert` option from Xcode alert.
+
+## Goals
+
+When you want to try out or to edit a SPM package in Xcode, or after adding any new `.package` under SPM's package manifest file; you need to either run `swift package update` or `swift package generate-xcodeproj` and reload Xcode again.
+
+This small wrapper aims to automate that process. 
+
+tldr; before:
 ```bash
 $ git clone https://github.com/vinhnx/spawn # clone any Swift Package Manager project
 $ swift package update # update or resolve package dependencies
@@ -27,16 +35,6 @@ after:
 ```bash
 $ spawn
 ```
-
-NOTE: you might want to close Xcode to have the `xed .` taking into effect, or chose `Revert` option from Xcode alert.
-
-## Goals
-
-When you want to try out or to edit a SPM package in Xcode, or after adding any new `.package` under SPM's package manifest file; you need to either run `swift package update` or `swift package generate-xcodeproj` and reload Xcode again.
-
-This small wrapper aims to automate that process. 
-
-Check Usage section below for more details.
 
 ## Installation
 
