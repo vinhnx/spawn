@@ -7,7 +7,7 @@
 **spawn** A small command-line tool to quickly tryout a Swift Package Manager package locally.
 
 ```bash
-❯ spawn
+$ spawn
 Completed resolution in 0.22s
 📦 ... Everything is already up-to-date
 🛠 ... generated: ./spawn.xcodeproj
