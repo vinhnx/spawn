@@ -21,7 +21,7 @@ public extension Process {
         self.waitUntilExit()
 
         switch terminationStatus {
-        case 0:
+        case 0: // exit code 0 == success
             return outPipe.emits()
 
         default:
