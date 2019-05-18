@@ -4,7 +4,7 @@
 [![Swift Package Manager](https://img.shields.io/badge/spm-compatible-brightgreen.svg?style=flat)](https://swift.org/package-manager)
 [![@vinhnx](https://img.shields.io/badge/contact-%40vinhnx-blue.svg)](https://twitter.com/vinhnx)
 
-**spawn** A small command-line tool to quickly tryout a Swift Package Manager package locally.
+**spawn** A small command-line tool to quickly tryout a Swift Package Manager package locally. Works with [Vapor](https://github.com/vapor) too.
 
 ```bash
 $ spawn
@@ -30,6 +30,28 @@ $ cd spawn # change directory to newly cloned `spawn` repo
 $ swift package update # update or resolve package dependencies
 $ swift package generate-xcodeproj # generate a .xcodeproj to edit on Xcode
 $ xed . # open generated .xcodeproj automatically
+```
+
+after:
+```bash
+$ spawn
+```
+
+## Usage
+
+On any Swift package directory, after `git clone`:
+
+```bash
+$ spawn
+```
+
+### Vapor
+
+You can use spawn as replacement for Vapor's `vapor xcode -y` command
+
+before:
+```bash
+$ vapor xcode -y
 ```
 
 after:
@@ -80,14 +102,6 @@ $ swift build -c release
 $ cp -f .build/release/spawn /usr/local/bin/spawn
  ```
 
-## Usage
-
-On any Swift package directory, after `git clone`:
-
-```bash
-$ spawn
-```
-
 ## Related projects
 
 If you like this tool, checkout my [vintage](https://github.com/vinhnx/vintage), it's a tool to generate and/or update Swift packages and open a Xcode project for you.
@@ -99,7 +113,6 @@ $ vintage && spawn # vintage: check for any outdated packages, spawn: generate a
 ```
 
 I hope you like it! :)
-
 
 ## Help, feedback or suggestions?
 
