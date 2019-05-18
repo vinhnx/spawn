@@ -3,6 +3,7 @@ import Foundation
 // reference:
 // + https://github.com/pixyzehn/Snippet/blob/master/Sources/SnippetCore/Snippet%2BExtensions.swift
 // + https://github.com/JohnSundell/ShellOut/blob/master/Sources/ShellOut.swift
+// TODO: reference https://github.com/apple/swift-package-manager/tree/master/Examples/package-info
 
 do {
     let files = try FileManager.fileURLs()

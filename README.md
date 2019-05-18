@@ -88,6 +88,19 @@ On any Swift package directory, after `git clone`:
 $ spawn
 ```
 
+## Related projects
+
+If you like this tool, checkout my [vintage](https://github.com/vinhnx/vintage), it's a tool to generate and/or update Swift packages and open a Xcode project for you.
+
+Combo:
+
+```bash
+$ vintage && spawn # vintage: check for any outdated packages, spawn: generate and update packages for you
+```
+
+I hope you like it! :)
+
+
 ## Help, feedback or suggestions?
 
 Feel free to contact me on [Twitter](https://twitter.com/vinhnx) for discussions, news & announcements & other projects. :rocket:
