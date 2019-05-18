@@ -26,6 +26,7 @@ This small wrapper aims to automate that process.
 tldr; before:
 ```bash
 $ git clone https://github.com/vinhnx/spawn # clone any Swift Package Manager project
+$ cd spawn # change directory to newly cloned `spawn` repo
 $ swift package update # update or resolve package dependencies
 $ swift package generate-xcodeproj # generate a .xcodeproj to edit on Xcode
 $ xed . # open generated .xcodeproj automatically
