@@ -6,7 +6,7 @@
 
 > Post WWDC updates: Xcode 11+ is now able to resolve and generate package and open an Xcode project for you automatically. So I will keep `spawn` for history and learning purpose, you can use this tool if you like. Nothing hurts if you like to work from command-line, huh? :)
 
-**spawn** A small command-line tool to quickly tryout a Swift Package Manager package locally. Works with [Vapor](https://github.com/vapor) too.
+**spawn** A small command-line tool to quickly tryout a Swift Package Manager (SPM) package locally. Works with [Vapor](https://github.com/vapor) too.
 
 ```bash
 $ spawn
