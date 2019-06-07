@@ -106,7 +106,7 @@ $ cp -f .build/release/spawn /usr/local/bin/spawn
 
 ## Related projects
 
-If you like this tool, checkout my [vintage](https://github.com/vinhnx/vintage), it's a tool to generate and/or update Swift packages and open a Xcode project for you.
+If you like this tool, checkout my [vintage](https://github.com/vinhnx/vintage), it's a tool to check for any outdated packages.
 
 Combo:
 
