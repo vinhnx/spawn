@@ -7,19 +7,19 @@
 
 import Foundation
 
-enum SpawnError: PrintableError {
+enum FileError: PrintableError {
     case directoryNotFound(String)
+    case fileNotFound(String)
     case failedToQueryDirectory
-    case swiftPackageManifestNotFound
 
     var message: String {
         switch self {
         case .directoryNotFound(let directory):
             return "Directory \(directory) not found"
+        case .fileNotFound(let filename):
+            return "File \(filename) not found"
         case .failedToQueryDirectory:
             return "Failed to query directory"
-        case .swiftPackageManifestNotFound:
-            return "Swift Package manifest file (Package.swift) not found"
         }
     }
 }
