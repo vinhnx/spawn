@@ -11,7 +11,7 @@ let package = Package(
     targets: [
         .target(
             name: "spawn",
-            dependencies: ["Core"]),
+            dependencies: []),
         .testTarget(
             name: "spawnTests",
             dependencies: ["spawn"]),
