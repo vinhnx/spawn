@@ -61,6 +61,14 @@ $ spawn
 
 ## Installation
 
+🆕 **[swiftbrew](https://github.com/swiftbrew/Swiftbrew)**
+
+"A package manager that installs prebuilt Swift command line tool packages, or Homebrew for Swift packages."
+
+```
+$ swift brew install vinhnx/spawn
+```
+
 **[homebrew](https://brew.sh)**
 
 ```bash
