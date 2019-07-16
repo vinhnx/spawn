@@ -7,6 +7,7 @@
 
 import Foundation
 
+// reference: https://github.com/JohnSundell/ShellOut/blob/master/Sources/ShellOut.swift#L315-L327
 struct ProcessError: PrintableError {
     /// The termination status of the command that was run
     public let terminationStatus: Int32
