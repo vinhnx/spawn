@@ -25,8 +25,8 @@ This small wrapper aims to automate that process.
 
 tldr; before:
 ```bash
-$ git clone https://github.com/vinhnx/spawn # clone any Swift Package Manager project
-$ cd spawn # change directory to newly cloned `spawn` repo
+$ git clone https://github.com/vinhnx/DictionaryNestedSubscript # clone any Swift Package Manager project
+$ cd DictionaryNestedSubscript # change directory to newly cloned repo
 $ swift package update # update or resolve package dependencies
 $ swift package generate-xcodeproj # generate a .xcodeproj to edit on Xcode
 $ xed . # open generated .xcodeproj automatically
@@ -34,8 +34,12 @@ $ xed . # open generated .xcodeproj automatically
 
 after:
 ```bash
+$ git clone https://github.com/vinhnx/DictionaryNestedSubscript # clone any Swift Package Manager project
+$ cd DictionaryNestedSubscript # change directory to newly cloned repo
 $ spawn
 ```
+
+TODO: I will be looking at the way to automate cloning from remote repo in the future, for example: `spawn https://github.com/vinhnx/DictionaryNestedSubscript`.
 
 ## Usage
 
