@@ -39,7 +39,11 @@ $ cd DictionaryNestedSubscript # change directory to newly cloned repo
 $ spawn
 ```
 
-TODO: I will be looking at the way to automate cloning from remote repo in the future, for example: `spawn https://github.com/vinhnx/DictionaryNestedSubscript`.
+TODO: I will be looking at the way to automate cloning from remote repo in the future, for example: 
+
+```bash
+$ spawn https://github.com/vinhnx/DictionaryNestedSubscript # not yet working
+```
 
 ## Usage
 
