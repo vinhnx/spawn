@@ -8,7 +8,7 @@
 
 Its job is to check if current repo has any `Package.swift` and resolve dependencies and then open the Xcode for you.
 
-(works with [Vapor](https://github.com/vapor))
+(works with [Vapor](https://github.com/vapor), [too](https://github.com/vinhnx/spawn/blob/master/README.md#vapor))
 
 ```bash
 $ spawn
