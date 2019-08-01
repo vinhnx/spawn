@@ -4,7 +4,11 @@
 [![Swift Package Manager](https://img.shields.io/badge/spm-compatible-brightgreen.svg?style=flat)](https://swift.org/package-manager)
 [![@vinhnx](https://img.shields.io/badge/contact-%40vinhnx-blue.svg)](https://twitter.com/vinhnx)
 
-**spawn** A small command-line tool to quickly tryout a Swift Package Manager (SPM) package locally. Works with [Vapor](https://github.com/vapor) too.
+**spawn** A small command-line tool to quickly tryout a Swift Package Manager (SPM) package locally. 
+
+Its job is to check if current repo has any `Package.swift` and resolve dependencies and then open the Xcode for you.
+
+(works with [Vapor](https://github.com/vapor))
 
 ```bash
 $ spawn
