@@ -6,6 +6,8 @@
 
 **spawn** A small command-line tool to quickly tryout a Swift Package Manager (SPM) package locally. 
 
+As of Xcode 11, this has been sherlock'ed by Xcode 11 Package support :), but I will keep this tool as learning purpose.
+
 Its job is to check if current repo has any `Package.swift` and resolve dependencies and then open the Xcode for you.
 
 (works with [Vapor](https://github.com/vapor), [too](https://github.com/vinhnx/spawn/blob/master/README.md#vapor))
