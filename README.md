@@ -6,7 +6,7 @@
 
 **spawn** A small command-line tool to quickly tryout a Swift Package Manager (SPM) package locally. 
 
-As of Xcode 11, this has been sherlock'ed by Xcode 11 Package support :), but I will keep this tool as learning purpose.
+As of Xcode 11, this has been sherlock'ed by Xcode 11 Package support :), as in from Xcode 11 onwards, Xcode will automatically resolve package dependencies and open Xcode project for you, no 3rd party tool needed. But I will keep this tool as learning purpose.
 
 Its job is to check if current repo has any `Package.swift` and resolve dependencies and then open the Xcode for you.
 
