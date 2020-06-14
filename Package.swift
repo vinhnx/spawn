@@ -15,5 +15,6 @@ let package = Package(
         .testTarget(
             name: "spawnTests",
             dependencies: ["spawn"]),
-    ]
+    ],
+    swiftLanguageVersions: [.v5]
 )
